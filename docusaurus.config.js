@@ -8,9 +8,9 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://playez-platform.github.io',
-  baseUrl: '/playez-docs/',
+  baseUrl: '/docs/',
   organizationName: 'playez-platform', // Usually your GitHub org/user name.
-  projectName: 'playez-docs', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
   
   deploymentBranch: 'gh-pages',
 
@@ -31,7 +31,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/playez-platform/playez-docs/blob/main',
+            'https://github.com/playez-platform/docs/blob/main',
         },
         theme: {
           customCss: './src/css/custom.css',
