@@ -31,7 +31,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/playez-platform/playez-docs/blob/main/docs/',
+            'https://github.com/playez-platform/playez-docs/blob/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -45,14 +45,17 @@ const config = {
     ({
       image: 'img/playez-social-card.jpg',
       navbar: {
-        title: 'Playez',
         logo: {
           alt: 'Playez Logo',
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
           {
-            href: 'https://playez.com',
+            href: 'https://playez.it',
             label: 'Back to Playez',
             position: 'right',
           },
