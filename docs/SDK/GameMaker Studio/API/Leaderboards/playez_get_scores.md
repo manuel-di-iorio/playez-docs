@@ -8,8 +8,29 @@ Get the list of scores from the specified leaderboard. If a leaderboard is not s
 | --- | --- | --- | --- |
 | callback | function | Callback called on get event | 
 | leaderboard | string | ID of the leaderboard to use | undefined |
-| offset | int | Pagination offset of the list, usually you will only show the first 10 scores | 0 |
-| limit | int | Count of scores to get in this request, can be a value up to 30 | 10 |
+| offset | number | Pagination offset of the scores list | 0 |
+| limit | number | Count of scores to get in this request, can be a value up to 100 | 10 |
+| player | string | If specified, will get the rank of this playerId | undefined |
+
+#### Response:
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| scores | Score[] | Array of scores | 
+| playerRank | number | Rank of the specified player (when requested) |
+| count | number | Total count of sent scores |
+
+Score interface:
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| _id | string | Score ID | 
+| playerId | string | Player ID |
+| playerUsername | string | Player username |
+| score | number | Score value | 
+| data | string | Custom string associated to this score (optional) |
+| createdAt | string | Creation time of this score |
+| updatedAt | string | Update time of this score (eg. when the player achieves a greater score) |
 
 #### Example:
 

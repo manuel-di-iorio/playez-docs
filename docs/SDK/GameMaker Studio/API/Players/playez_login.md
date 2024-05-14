@@ -12,6 +12,19 @@ By default, only a username is required but a password argument is supported. In
 | callback | function | Callback called on login event | 
 | password | string | Password of the player (optional) | undefined |
 
+#### Response:
+
+After the login, `global.playez.player` will be associated to the logged in Player.
+
+Player interface:
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| _id | string | Player ID |
+| username | string | Player username |
+| createdAt | string | Creation time of the player
+| updatedAt | string | Last time this player data has been updated
+
 #### Example:
 
 ```js
