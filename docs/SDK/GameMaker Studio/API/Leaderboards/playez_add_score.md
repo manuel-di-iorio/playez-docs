@@ -9,6 +9,7 @@ Add a score to the specified leaderboard. If a leaderboard is not specified, wil
 | score | number | Score to add (eg. 5000) |
 | callback | function | Callback called on send event | 
 | leaderboard | string | ID of the leaderboard to use | undefined |
+| group | string | Custom key to group some scores together, to later filter by this key | undefined |
 | data | string | Custom string to associate to this score. This value will be retrieved in the scores list | undefined |
 | insert_mode | string | How to update the player score if already inserted. It can be 'less' or 'greater'. Eg. if you specify 'greater', the score will be updated only if it is greater than the current one | 'greater' |
 
