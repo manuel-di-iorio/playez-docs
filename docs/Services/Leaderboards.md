@@ -4,7 +4,7 @@ sidebar_position: 1
 
 Let's say you want that your players compete with an online leaderboard to get the best scores. This is the basic flow using the GameMaker Studio SDK:
 
-1) You create the game on the Playez dashboard and copy the **game ID** and it **secret token**.
+1) You create the game on the Playez dashboard and copy the **game ID** and it **private token**.
 
 <img src="../img/en_example_create_game.png" style={{ width: 600, height: "100%" }} />
 
@@ -13,7 +13,7 @@ Let's say you want that your players compete with an online leaderboard to get t
 2) In your game, you'll first want to connect the player to the Websocket API:
 ```js
 // Create event of a persistent controller object
-playez_connect("<gameID>", "<secretToken>", function() {
+playez_connect("<gameID>", "<privateToken>", function() {
   // Player is connected, let's go to the next room
   room_goto_next(); 
 });

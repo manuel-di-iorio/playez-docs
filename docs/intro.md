@@ -18,7 +18,7 @@ Our servers are implemented with [Node.js](https://nodejs.org) using the most ef
 
 #### Security
 
-We value your data security as a priority, that is why we enforced Websocket over HTTPS (WSS) for API communication and why we implemented an automatic signing verification for all of the requests coming from your game. Your game will sign the request payload by using a combination of the secret token and other temporary encoded data and we'll do the same on the server to verify that your game actually sent this data. The secret token is never transmitted over the internet. Also, a part from the sign, all authenticated services requires the auth token of the player.
+We value your data security as a priority, that is why we enforced Websocket over HTTPS (WSS) for API communication and why we implemented an automatic signing verification for all of the requests coming from your game. Your game will sign the request payload by using a combination of the private token and other temporary encoded data and we'll do the same on the server to verify that your game actually sent this data. The private token is never transmitted over the internet. Also, a part from the sign, all authenticated services requires the auth token of the player.
 
 Sure, hackers may still be able to manipulate your game by decompiling it or by using memory attacks with tools like _Cheat Engine_, that is why we also encourage you to make this process harder by compiling the games to machine code (eg. in _GameMaker Studio_, by using the YYC output) and by integrating anti-cheat solutions to make it more difficult to tamper the process memory.
 
