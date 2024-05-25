@@ -4,6 +4,8 @@ sidebar_position: 1
 
 Add a score to the specified leaderboard. If a leaderboard is not specified, will add the score to the first one found.
 
+This action requires player authentication.
+
 | Argument | Type | Description | Default value
 | --- | --- | --- | --- |
 | score | number | Score to add (eg. 5000) |

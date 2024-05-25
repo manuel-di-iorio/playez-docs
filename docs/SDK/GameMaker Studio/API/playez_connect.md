@@ -8,7 +8,7 @@ Function to connect to the Playez API and send any requests.
 
 | Argument | Type | Description | Default value
 | --- | --- | --- | --- |
-| gameID | string | ID of your game that you can see on the game page |
+| gameId | string | ID of your game that you can see on the game page |
 | privateToken | string | This token is used to improve the security of your game. You can see it below the game ID on the game page
 | callback | function | Callback called on connection event | 
 
