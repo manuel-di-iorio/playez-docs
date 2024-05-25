@@ -14,6 +14,8 @@ Players will be connected with a persistent WebSocket connection in order to qui
 
 #### How Playez is made
 
+<img src={require("/static/img/server_architecture.png").default} style={{ width: 500, height: "100%" }} />
+
 Our servers are implemented with [Node.js](https://nodejs.org) using the most efficient tecnologies available like the [ws](https://www.npmjs.com/package/ws) library. We use [MongoDB](https://www.mongodb.com) as primary database, indexing as much as possible all queries. We host our servers on [Fly.io](https://fly.io/) and [Vercel](https://vercel.com/) to be able to quickly scale and efficiently geodistribute the instances. To get the country location of a player for analytics purposes, we use [GeoJS](https://www.geojs.io). Furthemore, [Redis](https://redis.io) will be introduced in the future to cache the API responses.
 
 #### Security

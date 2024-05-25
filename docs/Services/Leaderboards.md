@@ -6,9 +6,9 @@ Let's say you want that your players compete with an online leaderboard to get t
 
 1) You create the game on the Playez dashboard and copy the **game ID** and its **private token**.
 
-<img src="../img/en_example_create_game.png" style={{ width: 600, height: "100%" }} />
+<img src={require("/static/img/en_example_create_game.png").default} style={{ width: 600, height: "100%" }} />
 
-<img src="../img/en_example_view_game.png" style={{ width: 600, height: "100%" }} />
+<img src={require("/static/img/en_example_view_game.png").default} style={{ width: 600, height: "100%" }} />
 
 2) In your game, you'll first want to connect the player to the Websocket API:
 ```js
