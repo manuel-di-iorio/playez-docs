@@ -4,7 +4,7 @@ sidebar_position: 1
 
 Let's say you want that your players compete with an online leaderboard to get the best scores. This is the basic flow using the GameMaker Studio SDK:
 
-1) You create the game on the Playez dashboard and copy the **game ID** and it **private token**.
+1) You create the game on the Playez dashboard and copy the **game ID** and its **private token**.
 
 <img src="../img/en_example_create_game.png" style={{ width: 600, height: "100%" }} />
 
