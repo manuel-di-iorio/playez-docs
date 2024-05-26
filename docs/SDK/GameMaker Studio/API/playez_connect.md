@@ -2,9 +2,11 @@
 sidebar_position: 1
 ---
 
-Function to connect to the Playez API and send any requests.
+Function to connect to the Playez API.
 
+You should call this function at the start of your game in order to more precisely collect the playtime analytics.
 
+Also don't call other Playez functions before waiting for the connection callback, or they will fail.
 
 | Argument | Type | Description | Default value
 | --- | --- | --- | --- |
