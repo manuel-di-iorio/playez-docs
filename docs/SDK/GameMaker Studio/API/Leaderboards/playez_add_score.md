@@ -4,7 +4,7 @@ sidebar_position: 1
 
 Add a score to the specified leaderboard. 
 
-If a leaderboard is not specified, will automatically add the score to the default leaderboard. Note that if the game has no leaderboards, an error will be returned.
+If a leaderboard is not specified, will automatically add the score to the first leaderboard found. Note that if the game has no leaderboards, an error will be returned.
 
 This action requires player authentication.
 
