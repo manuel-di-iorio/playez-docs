@@ -2,7 +2,9 @@
 sidebar_position: 1
 ---
 
-Add a score to the specified leaderboard. If a leaderboard is not specified, will add the score to the first one found.
+Add a score to the specified leaderboard. 
+
+If a leaderboard is not specified, will automatically add the score to the default leaderboard. Note that if the game has no leaderboards, an error will be returned.
 
 This action requires player authentication.
 
@@ -11,9 +13,8 @@ This action requires player authentication.
 | score | number | Score to add (eg. 5000) |
 | callback | function | Callback called on send event | 
 | leaderboard | string | ID of the leaderboard to use | undefined |
-| group | string | Custom key to group some scores together, to later filter by this key | undefined |
+| tags | string[] | Array of tags for this score. You will be able to filter by these tags when retrieving the scores list | undefined |
 | data | string | Custom string to associate to this score. This value will be retrieved in the scores list | undefined |
-| insert_mode | string | How to update the player score if already inserted. It can be 'less' or 'greater'. Eg. if you specify 'greater', the score will be updated only if it is greater than the current one | 'greater' |
 
 #### Response:
 

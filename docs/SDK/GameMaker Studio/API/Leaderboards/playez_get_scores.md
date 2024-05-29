@@ -2,7 +2,11 @@
 sidebar_position: 2
 ---
 
-Get the list of scores from the specified leaderboard. If a leaderboard is not specified, will get the scores from the first one found.
+Get the list of scores from the specified leaderboard. 
+
+If a leaderboard is not specified, will get the scores from the the default leaderboard. Note that if the game has no leaderboards, an error will be returned.
+
+This action does not require player authentication.
 
 | Argument | Type | Description | Default value
 | --- | --- | --- | --- |
@@ -12,7 +16,7 @@ Get the list of scores from the specified leaderboard. If a leaderboard is not s
 | offset | number | Pagination offset of the scores list | 0 |
 | limit | number | Count of scores to get in this request, can be a value up to 100 | 10 |
 | sort | number | Sort order of the list (-1 = desc, 1 = asc) | -1 |
-| group | string | Filter by this custom group key | undefined |
+| tags | string[] | Filter by an array of tags | undefined |
 | continent | string | Filter by continent code | undefined
 | country | string | Filter by country code | undefined
 
