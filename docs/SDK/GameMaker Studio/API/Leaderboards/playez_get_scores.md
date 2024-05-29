@@ -4,7 +4,7 @@ sidebar_position: 2
 
 Get the list of scores from the specified leaderboard. 
 
-If a leaderboard is not specified, will get the scores from the the default leaderboard. Note that if the game has no leaderboards, an error will be returned.
+If a leaderboard is not specified, will get the scores from the default leaderboard. Note that if the game has no leaderboards, an error will be returned.
 
 This action does not require player authentication.
 
