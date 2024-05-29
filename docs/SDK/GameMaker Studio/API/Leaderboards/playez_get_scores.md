@@ -15,7 +15,6 @@ This action does not require player authentication.
 | player | string | If specified, will get the rank of this playerId | undefined |
 | offset | number | Pagination offset of the scores list | 0 |
 | limit | number | Count of scores to get in this request, can be a value up to 100 | 10 |
-| sort | number | Sort order of the list (-1 = desc, 1 = asc) | -1 |
 | tags | string[] | Filter by an array of tags | undefined |
 | continent | string | Filter by continent code | undefined
 | country | string | Filter by country code | undefined
@@ -37,7 +36,7 @@ Score interface:
 | playerUsername | string | Player username |
 | score | number | Score value | 
 | data | string | Custom string associated to this score |
-| group | string | Custom group key associated to this score |
+| tags | string | Tags associated to this score |
 | continent | string | Player's continent code |
 | country | string | Player's country code |
 | createdAt | string | Creation time of this score |
